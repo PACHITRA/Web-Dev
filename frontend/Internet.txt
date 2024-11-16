@@ -1,0 +1,276 @@
+Detailed Summary for [How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc) by [Merlin](https://merlin.foyer.work/)
+
+Learn how the internet works. It's a wire buried in the ground, and servers have unique IP addresses. Computers communicate through packets.
+
+Understanding how the internet works
+- Internet is like electricity, we use it every day without understanding its mechanics
+- Learning how the internet works puts you in the top 10% of people who understand it
+
+The internet is simply a wire
+- The internet is not a bubble created by cloud computing
+- People are more concerned about job security than education
+
+IP addresses help computers find each other
+- Every server has a unique IP address
+- Computers we use every day are called clients and are indirectly connected to the internet
+
+Using DSL to access AOL.com and Gmail
+- Accessing AOL.com as a server and ISP
+- Sending email from Gmail to AOL dial-up user
+
+Emails and internet data are broken into packets and reassembled at their destination.
+- Emails are sent from one server to another and retrieved by the recipient.
+- Information is broken into packets and reassembled to form a complete picture, email, web page, or tweet.
+
+IP addresses and routers keep your internet activity private
+- Everything connected to the internet has an IP address
+- Routers ensure that packets of data are sent to the correct destination
+
+Internet packets travel through multiple routers to reach their destination
+- Each packet is like a candy with multiple layers of IP addresses
+- Routers add their own IP address as the packet travels towards the server
+
+How the internet works in 5 minutes or less
+- The packet travels over the internet to reach the computer
+- Each router unwraps a layer to discover where to send the packet next
+
+https://cs.fyi/guide/http-in-depth
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This article provides a comprehensive overview of HTTP (HyperText Transfer Protocol), its evolution over time, and its significance in web development. Here’s a breakdown of the main points covered:
+
+What is HTTP?
+HTTP is a protocol that governs the communication between clients (like web browsers) and servers over the internet. It operates at the application layer of the TCP/IP model and defines how requests and responses are formatted and transmitted. By default, HTTP uses TCP port 80, while HTTPS uses port 443 for secure communication.
+
+Evolution of HTTP Versions:
+HTTP/0.9 (1991):
+
+The first version, very simple, only supporting the GET method.
+Requests consisted of a single line, like GET /index.html.
+No headers, and the response contained the HTML content followed by the server closing the connection.
+HTTP/1.0 (1996):
+
+Expanded to handle multiple content types (HTML, images, etc.).
+Introduced more methods like POST, HEAD, and added request/response headers (e.g., User-Agent, Content-Type).
+However, a new TCP connection was required for every request, resulting in performance issues.
+HTTP/1.1 (1997):
+
+Introduced persistent connections, allowing multiple requests over the same connection.
+Added support for new methods like PUT, DELETE, and PATCH.
+Introduced Content-Length, chunked transfers for dynamic content, and other optimizations.
+Still, only one request was allowed to be in progress at any time, leading to head-of-line blocking.
+SPDY (2009):
+
+A protocol developed by Google to improve HTTP performance by reducing latency.
+Key features included multiplexing (multiple requests in parallel), header compression, and improved security.
+SPDY influenced the development of HTTP/2.
+HTTP/2 (2015):
+
+Designed to address latency and performance issues by making HTTP a binary protocol.
+Introduced multiplexing (multiple requests over a single connection), header compression (using HPACK), and server push (sending resources proactively).
+Security (using TLS) became more common, though not strictly required by the spec.
+It used a new frame structure, and requests and responses were split into smaller binary frames.
+Key HTTP/2 Features:
+Binary Protocol:
+
+HTTP/2 messages are now composed of binary frames, making them easier to parse and more efficient than the text-based HTTP/1.x.
+Multiplexing:
+
+Multiple requests can be sent over a single connection simultaneously, avoiding the performance hit of opening many connections.
+Header Compression:
+
+Repetitive header data is compressed, reducing bandwidth and improving performance.
+Server Push:
+
+The server can send resources to the client without waiting for explicit requests, reducing latency and improving load times.
+Request Prioritization:
+
+Clients can specify the priority of requests, allowing servers to prioritize critical resources.
+Security:
+
+While HTTP/2 doesn't mandate encryption, most implementations require it, with TLS (Transport Layer Security) becoming standard for secure communication.
+Why the Need for HTTP/2:
+Despite the improvements in HTTP/1.1, the internet’s demands for faster and more efficient protocols continued to grow. HTTP/1.1’s limitations (like head-of-line blocking, the overhead of opening multiple connections, and latency) led to the need for a more advanced protocol like HTTP/2, which addresses these issues and optimizes web traffic for modern, resource-heavy web applications.
+
+In Summary:
+HTTP is a foundational protocol for web communication, evolving from the simplest form (HTTP/0.9) to a complex, efficient protocol in HTTP/2. As the web has grown more complex, newer versions of HTTP have been developed to address performance, security, and scalability concerns, with HTTP/2 offering significant improvements over its predecessors. Understanding these versions is crucial for web developers to optimize web applications and ensure efficient communication between clients and servers.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Detailed Summary for [What Is a Domain Name | Domain Names Explained](https://www.youtube.com/watch?v=lMHzpBwPuG8) by [Merlin](https://merlin.foyer.work/)
+
+Understanding Domain Names: Their Importance, Types, and How They Work for Your Website
+
+Introduction to domain names and their importance for websites.
+- A domain name serves as the address of a website, making it accessible on the internet.
+- Understanding domain names is crucial for beginners starting blogs or online businesses.
+
+A domain name is essential for website accessibility.
+- Every website is made up of a domain name and a web server.
+- A domain name serves as the online address users enter in their browsers.
+
+Domain names simplify web navigation by replacing complex IP addresses.
+- A domain name acts like a street address, helping web browsers find websites easily.
+- Without domain names, users would need to remember numeric IP addresses, which are difficult to recall.
+
+Domain names connect users to websites through DNS servers.
+- When a browser requests a domain, it queries DNS servers to find the corresponding IP address.
+- A domain name includes a unique name and an extension, like 'hostinger' and '.com'.
+
+Understanding domain names and their registration process.
+- A domain name must use a valid extension and cannot be already owned by others.
+- Common types of domains include top-level domains and country code domains.
+
+Understanding domain names and their types, including TLDs.
+- Top Level Domains (TLDs) are the highest level in the domain name system, including popular types like .com, .org, and .net.
+- Country code TLDs consist of two letters corresponding to international country codes, such as .us for the United States and .jp for Japan.
+
+Non-country-specific top-level domains serve specific purposes.
+- Popular examples include '.com' for commercial entities and '.edu' for educational institutions.
+- These domains cater to different audiences and use cases, making it easier for users to identify the type of website.
+
+Encouragement to engage with the video and subscribe.
+- Viewers are invited to leave questions related to domain names in the comments.
+- The creator encourages liking, sharing, and subscribing for more content.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Detailed Summary for [Different Types of Web Hosting Explained! | Shared Hosting vs. VPS Hosting vs. Dedicated Server](https://www.youtube.com/watch?v=AXVZYzw8geg) by [Merlin](https://merlin.foyer.work/)
+
+"Understanding Different Web Hosting Options: Shared Hosting, VPS Hosting, and Dedicated Servers Explained"
+
+Different types of web hosting explained
+- Shared hosting involves sharing a server with many other websites, offering affordable cost but potentially slower performance.
+- VPS hosting provides a virtual private server, giving more control and resources but at a higher cost compared to shared hosting.
+
+Shared hosting is an economical way to start a website but has limitations
+- Shared hosting means sharing server resources with other websites, leading to potential performance limitations
+- Shared hosting can be vulnerable to denial of service attacks from other websites on the same server
+
+Shared hosting is worth it for casual blogs or small business websites.
+- Shared hosting is readily available, affordable, and suitable for first-time WordPress website builders.
+- VPS hosting offers a higher level of resource separation and dedicated resources, suitable for handling more traffic.
+
+VPS hosting provides dedicated resources and scalability, solving the limitations of shared hosting.
+- With VPS hosting, you get guaranteed resources and a virtual computer reserved solely for you.
+- VPS hosting allows for easy scalability and modular upgradability, addressing the challenges of shared hosting during high traffic periods.
+
+VPS hosting allows greater customization and control.
+- VPS hosting offers more server resource customization options and control over the server.
+- Managing a traditional VPS can be challenging for non-tech savvy individuals, but managed hosting can help alleviate this issue.
+
+Different types of web hosting - Shared Hosting, VPS Hosting, Dedicated Server
+- Cloudways allows you to have your own VPS from a cloud provider and manages the technical side.
+- A managed VPS provides a clean management panel and the power advantages of a VPS, though it is more expensive.
+
+Cloud computing is a better choice for advanced hosting projects than dedicated servers.
+- Managed WordPress hosting, like Dreampress, WPEngine, Flywheel, and Kinsta, offers reliable and fast experience using isolated containers, similar to a VPS.
+- Dreamhost offers standard shared hosting, managed VPS hosting, managed WordPress hosting, and dedicated server hosting.
+
+Consider features and practicality before choosing a hosting type.
+- Evaluate budget, need for support, and development tools.
+- Choose between shared hosting, VPS hosting, or managed/unmanaged hosting based on your needs.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Detailed Summary for [DNS and How does it work?](https://www.youtube.com/watch?v=Wj0od2ag5sk) by [Merlin](https://merlin.foyer.work/)
+
+The video discusses DNS and its importance for web development. It explains how DNS works and how it helps locate devices on the internet.
+
+Learn about DNS and its records
+- DNS is a crucial topic for web developers
+- Lesson divided into two videos: DNS basics and DNS records
+
+Understanding Networks and Internet
+- Devices connected to each other form a network
+- Internet is a global network of networks
+
+IP addresses are used to locate devices and websites on the internet.
+- Each device and website has a unique IP address in numeric format.
+- The browser uses the IP address to load the website, even if we enter the domain name in the browser.
+
+DNS helps browsers get IP addresses from domain names
+- Browsers send domain names to DNS and receive IP addresses in return
+- Once the browser has the IP address, it can access the website through the network
+
+Browser finds IP address using cache, DNS cache, and host file.
+- Browser checks cache for IP address from previous visits.
+- If not found, browser checks DNS cache and host file for IP address mapping.
+
+Understanding DNS Caching
+- DNS servers cache IP addresses for faster access
+- ISP caches may have IP addresses from previous visits
+
+Understanding IP address and domain name information
+- IP address information is used to identify the location of a domain name
+- TLD server and authoritative name server provide information about the domain name
+
+DNS servers help find IP address of websites
+- Request goes to authoritative name server
+- IP address is then sent to recursive DNS servers and cached before being sent to user's computer and browser
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Detailed Summary for [How does a browser work ? | Engineering side](https://www.youtube.com/watch?v=5rLFYtXHo9s) by [Merlin](https://merlin.foyer.work/)
+
+Summarized input: This video discusses the inner workings of browsers, teaching the viewer about HTML, CSS, JavaScript, and more. 
+
+This video explains how the browser works and its impact on development.
+- Video focuses on the inner engineering side of the browser and common features.
+- Videos are longer to provide a better understanding and teaching experience.
+- No fast pace editing, it's about relaxing and enjoying the content.
+- Similar to the node.js video, this one will walk you through the inner workings of the browser.
+- Understanding the browser helps in developing performant and optimized applications.
+- Includes discussions on CSS, C++, and the interrelation with HTML.
+
+HTML is a powerful programming language that can render elements on a browser.
+- HTML is not just about writing tags, it is an abstraction layer on top of CSS.
+- CSS and other languages like C++ work behind the scenes to render HTML elements.
+- A browser is no longer just a piece of software, it is a full-blown operating system.
+
+Browser engines have two main parts: rendering and JS engine.
+- Rendering engine is responsible for HTML, CSS, and JS optimization.
+- JS engine handles JavaScript and its optimization.
+- Browsers have networking capabilities to load files from remote servers.
+- Timers in browsers allow scheduling tasks in JavaScript.
+
+Understanding the browser as an operating system
+- Browser has its own timers and networking capabilities
+- It has its own memory, rendering capability, JavaScript engine, browser engine, and UI interface
+- Being able to load and display HTML is a complex process
+- Node lists are returned when accessing elements from the DOM
+
+The process of storing, converting, and tokenizing data in computers.
+- Computers store data in zeros and ones.
+- Data is converted into character sequences using character encoding.
+- Tokenization involves selecting specific words or elements from the data.
+
+Tokenization and HTML Structure Creation
+- Tokenization is the process of breaking down text into smaller units called tokens.
+- After tokenization, a structure is created around the tokens.
+- This structure is like a big object that contains information about each entity in the HTML document.
+- The structure provides details about tags, titles, data/values, and other properties of the entities.
+- The process of converting everything into objects allows for easier manipulation and understanding of the HTML document.
+- Having scattered objects is not useful; they need to be organized in a structured manner.
+
+The process of generating the DOM and rendering the webpage
+- The DOM is generated from the HTML page
+- The node list of the DOM is accessible from JavaScript
+- The DOM does not represent what's on the screen yet
+- The CSS part is crucial and requires character conversion
+
+CSS Object Model and its relation to the Document Object Model
+- The CSS Object Model is created after the tokenization and conversion of characters
+- Objects are created from the CSS, and relations are established between the objects
+- The CSS Object Model is independent of the Document Object Model
+
+The browser prioritizes executing JavaScript before rendering the page.
+- The moment the browser sees a script tag, it stops doing everything that's not a script.
+- JavaScript can manipulate the DOM and CSS.
+- Rendering is delayed until JavaScript is executed, leading to the term 'hydration'.
+- In older versions of React, all JavaScript had to be shipped before the website could be seen.
+- In order to prioritize rendering, HTML and CSS should reach the browser before JavaScript.
+
+CSS can sometimes be a bottleneck in improving application performance
+- JavaScript execution halts until CSS is ready
+- Priority is given to DOM, then CSS, and finally JavaScript

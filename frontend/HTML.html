@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- The DOCTYPE declaration defines the document type and version of HTML -->
+<!-- This is HTML5, the latest standard -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag defines the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the website is responsive and adapts to various screen sizes -->
+    <title>Comprehensive HTML Tutorial</title>
+    <!-- The title tag defines the text displayed on the browser tab -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Links an external CSS file for styling -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Adds a favicon (small icon) to the browser tab -->
+</head>
+
+<body>
+    <!-- Everything visible on the webpage is contained inside the body -->
+
+    <!-- Header Section -->
+    <header>
+        <!-- The header element often contains the website logo, navigation links, or intro text -->
+        <h1>Welcome to the HTML Tutorial</h1>
+        <!-- h1 is the main heading of the document -->
+        <h2>Understanding HTML Step by Step</h2>
+        <!-- h2 is a subheading used for hierarchical content -->
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- The main tag defines the central content of the webpage -->
+
+        <!-- Paragraphs -->
+        <section>
+            <!-- Section groups content under a thematic heading -->
+            <h2>Paragraphs and Text</h2>
+            <p>This is a paragraph. It contains a block of text.</p>
+            <!-- The p tag creates a paragraph -->
+            <p>You can style text as <strong>bold</strong> or <em>italic</em>.</p>
+            <!-- strong is for bold text, em is for italicized text -->
+        </section>
+
+        <!-- Lists -->
+        <section>
+            <h2>Lists</h2>
+            <p>HTML supports ordered, unordered, and description lists:</p>
+
+            <!-- Unordered List -->
+            <h3>Unordered List:</h3>
+            <ul>
+                <!-- ul stands for unordered list; items are bullet points -->
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ul>
+
+            <!-- Ordered List -->
+            <h3>Ordered List:</h3>
+            <ol>
+                <!-- ol stands for ordered list; items are numbered -->
+                <li>Step one</li>
+                <li>Step two</li>
+                <li>Step three</li>
+            </ol>
+
+            <!-- Description List -->
+            <h3>Description List:</h3>
+            <dl>
+                <!-- dl stands for description list -->
+                <dt>HTML</dt>
+                <!-- dt represents a term -->
+                <dd>A markup language for structuring content on the web.</dd>
+                <!-- dd represents the description of the term -->
+                <dt>CSS</dt>
+                <dd>A stylesheet language for styling web pages.</dd>
+            </dl>
+        </section>
+
+        <!-- Links -->
+        <section>
+            <h2>Links</h2>
+            <!-- Links allow navigation to other pages, email addresses, or phone numbers -->
+            <p><a href="https://example.com" target="_blank">Visit Example.com</a></p>
+            <!-- href specifies the link's destination; target="_blank" opens in a new tab -->
+            <p><a href="mailto:example@example.com">Email Me</a></p>
+            <!-- mailto links open the user's email client -->
+            <p><a href="tel:+1234567890">Call Me</a></p>
+            <!-- tel links open the phone app on mobile devices -->
+        </section>
+
+        <!-- Images -->
+        <section>
+            <h2>Images</h2>
+            <!-- Images are added using the img tag -->
+            <img src="example.jpg" alt="An example image" width="400" height="300">
+            <!-- alt provides a text description for accessibility -->
+            <!-- width and height specify dimensions -->
+        </section>
+
+        <!-- Tables -->
+        <section>
+            <h2>Tables</h2>
+            <!-- Tables are used to display data in rows and columns -->
+            <table border="1">
+                <!-- border="1" adds a simple border to the table -->
+                <caption>Sample Table</caption>
+                <!-- The caption tag provides a title for the table -->
+                <thead>
+                    <!-- Thead contains the table's header row -->
+                    <tr>
+                        <th>Column 1</th>
+                        <!-- th defines a header cell -->
+                        <th>Column 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Tbody contains the main content rows -->
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <!-- td defines a data cell -->
+                        <td>Row 1, Cell 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Forms -->
+        <section>
+            <h2>Forms</h2>
+            <form action="https://example.com/submit" method="post">
+                <!-- Forms are used to collect user input and submit it to a server -->
+                <label for="name">Name:</label>
+                <!-- Label associates text with an input field -->
+                <input type="text" id="name" name="name" required>
+                <!-- Input fields collect user data; type specifies the input format -->
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <!-- The email type ensures a valid email format -->
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <!-- Textarea is for multi-line text input -->
+                <br>
+                <button type="submit">Submit</button>
+                <!-- Button triggers the form submission -->
+            </form>
+        </section>
+
+        <!-- Semantic Elements -->
+        <section>
+            <h2>Semantic HTML</h2>
+            <article>
+                <!-- Article represents self-contained content -->
+                <h3>What is Semantic HTML?</h3>
+                <p>Semantic HTML uses elements that have meaningful names, like <code>header</code>, <code>footer</code>, and <code>main</code>.</p>
+            </article>
+            <aside>
+                <!-- Aside contains supplementary information -->
+                <p>This is an aside. It could contain ads, links, or related info.</p>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Footer usually contains site-wide information -->
+        <p>&copy; 2024 Comprehensive HTML Tutorial</p>
+        <!-- The copyright symbol represents the year -->
+    </footer>
+</body>
+<header>
+    <h1>Detailed Summary: Why & When to Use Semantic HTML Elements over Divs</h1>
+    <p>
+        <a href="https://www.youtube.com/watch?v=bOUhq46fd5g" target="_blank">Watch the video</a> by 
+        <a href="https://merlin.foyer.work/" target="_blank">Merlin</a>.
+    </p>
+</header>
+
+<main>
+    <section>
+        <h2>Introduction</h2>
+        <p>This tutorial explores the benefits of using semantic HTML elements instead of <code>div</code> tags. Semantic elements improve the structure, SEO, and accessibility of web pages.</p>
+    </section>
+
+    <section>
+        <h2>Key Points Covered</h2>
+
+        <article>
+            <h3>1. Semantic HTML Elements Are Preferred Over Divs</h3>
+            <ul>
+                <li>Semantic elements provide clear meaning and structure to HTML, making it easier for developers and users to scan the code.</li>
+                <li>They improve Search Engine Optimization (SEO), helping search engines rank websites higher.</li>
+                <li>Enhanced accessibility for screen readers and better content categorization/indexing.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>2. Semantic Structure of a Typical Web Page</h3>
+            <ul>
+                <li>The <code>header</code> often contains a logo and navigation links.</li>
+                <li>The <code>main</code> content is divided into <code>section</code> elements with headings and paragraphs.</li>
+                <li>Example: The <code>footer</code> includes links and nested structures for additional content.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>3. Using Tags Like Sidebar, Article, and Aside</h3>
+            <ul>
+                <li>Sidebars are typically marked with <code>aside</code>, separating them from the main content.</li>
+                <li>The <code>article</code> tag represents self-contained content, making it flexible to move to another location without losing meaning.</li>
+                <li>The <code>nav</code> tag is reserved for primary navigation links.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>4. Replacing Divs with Sections</h3>
+            <ul>
+                <li>The <code>section</code> tag groups related content for semantic clarity.</li>
+                <li><code>Div</code> tags are used only for layout purposes or unrelated content.</li>
+                <li>Example: A <code>section</code> grouping company logos maintains semantic meaning compared to using a <code>div</code>.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>5. Differentiating Between Sections and Divs</h3>
+            <ul>
+                <li><code>Sections</code> denote related content as part of a larger context.</li>
+                <li><code>Divs</code> are for layout or wrapping content that lacks semantic meaning.</li>
+                <li>Proper use of <code>sections</code> and <code>divs</code> improves a webpage’s structure and accessibility.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>6. Organizing Content with Aside and Article Tags</h3>
+            <ul>
+                <li>The <code>aside</code> tag is used for content like sidebars that are secondary to the main page.</li>
+                <li>The <code>article</code> tag is used for main content that stands on its own, offering clarity and flexibility.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>7. Using Tags for Navigation and Structuring</h3>
+            <ul>
+                <li>The <code>nav</code> tag is commonly used for organizing navigation menus.</li>
+                <li>Use <code>div</code> tags for purely stylistic elements or unrelated content.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>8. Styling Without Overloading Semantics</h3>
+            <ul>
+                <li>Visually similar elements, like breadcrumbs and buttons, serve different purposes.</li>
+                <li>Breadcrumbs are typically marked with <code>nav</code> or <code>ul</code>, while buttons are marked with the <code>button</code> tag.</li>
+                <li>Using semantic tags ensures proper functionality while achieving the desired layout.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>Semantic HTML elements make web pages more readable, accessible, and SEO-friendly. They allow developers to create meaningful structures that benefit both humans and search engines. Proper use of elements like <code>header</code>, <code>section</code>, <code>aside</code>, and <code>article</code> enhances the overall quality and usability of websites.</p>
+    </section>
+</main>
+
+
+<header>
+    <h1>A11ycasts Accessibility Guide</h1>
+    <p>Learn essential accessibility concepts for building inclusive websites, explained in the A11ycasts series.</p>
+</header>
+
+<main>
+    <!-- Section: A11ycasts #01 - Introducing A11ycasts -->
+    <section class="section">
+        <h2>1. Introducing A11ycasts</h2>
+        <p>The A11ycasts series introduces web accessibility principles, helping developers build websites that are inclusive and usable for all users, including those relying on assistive technologies.</p>
+    </section>
+
+    <!-- Section: A11ycasts #02 - Inert Polyfill -->
+    <section class="section">
+        <h2>2. Inert Polyfill</h2>
+        <p>The inert polyfill enables the use of <code>inert</code> attribute, which makes content on the page non-interactive, helping improve accessibility by disabling elements temporarily.</p>
+        <div class="code-block">
+            Example:
+            <pre>
+<div class="inert" inert>
+<button>Button (Inert)</button>
+<input type="text" placeholder="Input (Inert)">
+</div>
+            </pre>
+        </div>
+    </section>
+
+    <!-- Section: A11ycasts #03 - What is Focus? -->
+    <section class="section">
+        <h2>3. What is Focus?</h2>
+        <p>The concept of "focus" is crucial for web accessibility. It indicates which element on a webpage is currently active and ready to receive keyboard input. Focusable elements include links, buttons, and form inputs.</p>
+        <div class="code-block">
+            Example:
+            <pre>
+<a href="#">Focusable Link</a>
+<button>Focusable Button</button>
+<input type="text" placeholder="Focusable Input">
+            </pre>
+        </div>
+    </section>
+
+    <!-- Section: A11ycasts #04 - Controlling Focus with tabindex -->
+    <section class="section">
+        <h2>4. Controlling Focus with tabindex</h2>
+        <p>Use the <code>tabindex</code> attribute to control the focus order of elements when navigating with the Tab key. The <code>tabindex="0"</code> includes an element in the natural tab order, while <code>tabindex="-1"</code> removes it from the tab order but keeps it focusable programmatically.</p>
+        <div class="code-block">
+            Example:
+            <pre>
+<a href="#" tabindex="0">Link</a>
+<button tabindex="-1">Invisible Button</button>
+<input type="text" tabindex="1" placeholder="Custom Tab Order">
+            </pre>
+        </div>
+        <div class="note">
+            <strong>Tip:</strong> Avoid using positive tabindex values, as they can confuse the tab order.
+        </div>
+    </section>
+
+    <!-- Section: A11ycasts #05 - Just use button -->
+    <section class="section">
+        <h2>5. Just Use Button</h2>
+        <p>Always use the <code>&lt;button&gt;</code> element for actions. Avoid using <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> for clickable actions as they are not semantically correct and might not be accessible for screen readers.</p>
+        <div class="code-block">
+            Example:
+            <pre>
+<button>Correct: Button Element</button>
+<div role="button" tabindex="0">Incorrect: Div as Button</div>
+            </pre>
+        </div>
+    </section>
+
+    <!-- Section: A11ycasts #06 - Roving tabindex -->
+    <section class="section">
+        <h2>6. Roving tabindex</h2>
+        <p>Roving tabindex allows navigation between a set of elements dynamically. It’s particularly useful when creating interactive widgets such as carousels or tabbed navigation.</p>
+        <div class="code-block">
+            Example:
+            <pre>
+<div role="tablist" aria-label="Tablist">
+<button role="tab" tabindex="0">Tab 1</button>
+<button role="tab" tabindex="-1">Tab 2</button>
+</div>
+            </pre>
+        </div>
+    </section>
+
+    <!-- Section: A11ycasts #07 - Screen Reader Basics: VoiceOver -->
+    <section class="section">
+        <h2>7. Screen Reader Basics: VoiceOver</h2>
+        <p>VoiceOver is a built-in screen reader for macOS and iOS. It allows visually impaired users to navigate and interact with web content using speech output.</p>
+    </section>
+
+    <!-- Section: A11ycasts #08 - Why Do Semantics Matter? -->
+    <section class="section">
+        <h2>8. Why Do Semantics Matter?</h2>
+        <p>Using semantic HTML tags (like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>) helps screen readers and other assistive technologies interpret the structure of a webpage.</p>
+        <div class="code-block">
+            Example:
+            <pre>
+<header>
+<h1>Website Title</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+</nav>
+</header>
+<main>
+<article>
+<h2>Article Title</h2>
+<p>Article content...</p>
+</article>
+</main>
+<footer>
+<p>&copy; 2024 Your Website</p>
+</footer>
+            </pre>
+        </div>
+    </section>
+
+    <!-- Section: A11ycasts #09 - Screen Reader Basics: NVDA -->
+    <section class="section">
+        <h2>9. Screen Reader Basics: NVDA</h2>
+        <p>NVDA (NonVisual Desktop Access) is a free, open-source screen reader for Windows. It helps blind users access digital content by reading the screen aloud.</p>
+    </section>
+
+    <!-- Section: A11ycasts #10 - Alerts -->
+    <section class="section">
+        <h2>10. Alerts</h2>
+        <p>Alerts are used to inform users about changes or updates on a page. Use the <code>aria-live</code> attribute to indicate the importance of the alert message.</p>
+        <div class="code-block">
+            Example:
+            <pre>
+<div role="alert" aria-live="assertive">This is an urgent alert message.</div>
+            </pre>
+        </div>
+    </section>
+
+    <!-- Section: A11ycasts #11 - How to Check for Accessibility -->
+    <section class="section">
+        <h2>11. How to Check for Accessibility</h2>
+        <p>Accessibility can be tested using manual inspection, browser extensions (like Lighthouse), and screen reader testing. Regular audits ensure your site is accessible to all users.</p>
+    </section>
+
+    <!-- Section: A11ycasts #12 - The Art of Labeling -->
+    <section class="section">
+        <h2>12. The Art of Labeling</h2>
+        <p>Properly labeling form elements with <code>label</code> tags and providing clear instructions helps screen reader users understand the form's purpose.</p>
+        <div class="code-block">
+            Example:
+            <pre>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+            </pre>
+        </div>
+    </section>
+
+    <!-- Section: A11ycasts #13 - Intro to ARIA -->
+    <section class="section">
+        <h2>13. Intro to ARIA</h2>
+        <p>ARIA (Accessible Rich Internet Applications) is used to enhance accessibility for dynamic content. It adds roles and properties to non-semantic HTML elements.</p>
+    </section>
+
+    <!-- Section: A11ycasts #14 - States and Properties in ARIA -->
+    <section class="section">
+        <h2>14. States and Properties in ARIA</h2>
+        <p>ARIA roles and properties help communicate the current state or behavior of an element, such as a checkbox's checked state or a live region's update status.</p>
+        <div class="code-block">
+            Example:
+            <pre>
+<input type="checkbox" id="agree" aria-checked="false">
+<button aria-live="assertive">Content Update</button>
+            </pre>
+        </div>
+    </section>
+
+    <!-- Section: A11ycasts #15 - Automated Testing with aXe -->
+    <section class="section">
+        <h2>15. Automated Testing with aXe</h2>
+        <p>Automated accessibility testing tools, like aXe, help identify common accessibility issues on websites, streamlining the process of auditing web content.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Accessibility Guide</p>
+    </footer>
+</main>
+</html>
+<!-- --------------------------------------------------------------------------------------------------------------------------                 -->
