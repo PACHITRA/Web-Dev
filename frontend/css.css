@@ -1,0 +1,290 @@
+/* =====================================================
+   COMPLETE CSS REFERENCE GUIDE
+   ===================================================== */
+
+/* 1. BASIC SYNTAX */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  /* Comments are written using /* ... */ */
+  
+  /* =====================================================
+     2. SELECTORS
+     ===================================================== */
+  
+  /* Universal Selector */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Type Selector */
+  h1 {
+    font-size: 2em;
+  }
+  
+  /* Class Selector */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+  
+  /* ID Selector */
+  #main {
+    padding: 20px;
+  }
+  
+  /* Attribute Selector */
+  input[type="text"] {
+    border: 1px solid #ccc;
+  }
+  
+  /* Grouping Selectors */
+  h1, h2, h3 {
+    color: #444;
+  }
+  
+  /* Descendant Selector */
+  div p {
+    font-size: 1em;
+  }
+  
+  /* Child Selector */
+  div > p {
+    color: red;
+  }
+  
+  /* Adjacent Sibling Selector */
+  h1 + p {
+    color: green;
+  }
+  
+  /* General Sibling Selector */
+  h1 ~ p {
+    font-style: italic;
+  }
+  
+  /* =====================================================
+     3. PROPERTIES
+     ===================================================== */
+  
+  /* Text and Font */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: justify;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+  
+  /* Colors */
+  h1 {
+    color: #222;
+    background-color: yellow;
+    opacity: 0.8;
+  }
+  
+  /* Borders */
+  div {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  /* Box Shadow */
+  .box {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* =====================================================
+     4. BOX MODEL
+     ===================================================== */
+  
+  /* Padding, Border, and Margin */
+  .container {
+    width: 300px;
+    padding: 20px;
+    margin: 10px auto;
+    border: 5px solid red;
+  }
+  
+  /* Box-sizing */
+  .box-sizing-example {
+    box-sizing: border-box; /* Includes padding and border in the width/height */
+  }
+  
+  /* =====================================================
+     5. POSITIONING
+     ===================================================== */
+  
+  /* Static (default) */
+  .static-box {
+    position: static;
+  }
+  
+  /* Relative */
+  .relative-box {
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  
+  /* Absolute */
+  .absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+  
+  /* Fixed */
+  .fixed-box {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Sticky */
+  .sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: white;
+  }
+  
+  /* =====================================================
+     6. FLEXBOX
+     ===================================================== */
+  
+  .flex-container {
+    display: flex;
+    justify-content: center; /* horizontal alignment */
+    align-items: center; /* vertical alignment */
+    flex-wrap: wrap; /* Wrap items to the next row */
+  }
+  
+  .flex-item {
+    flex: 1; /* Takes equal space */
+    margin: 10px;
+    background-color: lightblue;
+  }
+  
+  /* =====================================================
+     7. GRID
+     ===================================================== */
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    background-color: coral;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* =====================================================
+     8. RESPONSIVE DESIGN
+     ===================================================== */
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    body {
+      background-color: lightgray;
+    }
+    .container {
+      width: 100%;
+    }
+  }
+  
+  /* =====================================================
+     9. PSEUDO-CLASSES & PSEUDO-ELEMENTS
+     ===================================================== */
+  
+  /* Pseudo-classes */
+  a:hover {
+    color: red;
+  }
+  
+  input:focus {
+    outline: 2px solid blue;
+  }
+  
+  /* Pseudo-elements */
+  p::before {
+    content: "Note: ";
+    font-weight: bold;
+  }
+  
+  p::after {
+    content: " [Read More]";
+  }
+  
+  /* =====================================================
+     10. ANIMATIONS AND TRANSITIONS
+     ===================================================== */
+  
+  /* Transitions */
+  .transition-box {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .transition-box:hover {
+    transform: scale(1.2);
+    background-color: lightgreen;
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .animated-box {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  /* =====================================================
+     11. ADVANCED CONCEPTS
+     ===================================================== */
+  
+  /* Variables (Custom Properties) */
+  :root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+  }
+  
+  .button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Clipping and Masking */
+  .clip-example {
+    clip-path: circle(50% at 50% 50%);
+  }
+  
+  /* Filters */
+  .image {
+    filter: grayscale(100%);
+  }
+  
+  /* =====================================================
+     END OF COMPLETE GUIDE
+     ===================================================== */
+  
