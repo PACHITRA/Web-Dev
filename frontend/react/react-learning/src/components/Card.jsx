@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 
-const Card = ({children}) => {
+const Card = (props) => {
   return (
     <div>
-        {children}
+        {props.children}
     </div>
     
   )
