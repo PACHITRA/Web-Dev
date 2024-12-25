@@ -82,12 +82,21 @@ const App = () => {
 export default App
 */
 //********************************************************************* */
-
+/*
 import Greeting from "./components/Greeting"
 
 const App = () => {
   return <Greeting timeOfDay={"morning"}></Greeting>
 }
+
+export default App
+*/
+const App = () => {
+  return (
+    <div>App</div>
+  )
+}
+
 
 export default App
 
