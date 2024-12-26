@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 /*import Person from "./components/Person"
 import Card from "./components/Card"
 const App = () => {
@@ -62,6 +64,8 @@ export default App
 */
 //********************************************************************* */
 
+
+
 /*
 import Weather from "./components/Weather";
 const App = () => {
@@ -91,12 +95,126 @@ const App = () => {
 
 export default App
 */
+//********************************************************************* */
+/*
 const App = () => {
-  return (
-    <div>App</div>
-  )
+  
+    const [count, setCount] = useState(0);
+    const increment = () => {
+      setCount(count + 1);
+    }
+    const decrement = () => {
+      setCount(count - 1);
+    
+      }
+
+    return(
+      <div>
+        <h1>Count: {count}</h1>
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
+        <button onClick={() => setCount(0)}>Reset</button>
+      </div>
+    )
 }
 
 
 export default App
+*/
+//********************************************************************* */
+/*
+const App = () => {
+  const [friends, setfriends] = useState(["John", "Emily"])
 
+  return (
+    <div>
+      <h1>Friends:</h1>
+      {friends.map((f)=>(
+        <li key={Math.random}>{f}</li>
+      ))} 
+      <button onClick={() => setfriends([...friends, "Alice"])}>Add New Friend</button>
+      <button onClick={() => setfriends(friends.filter((f)=> f !== "John"))}>Remove John</button>
+      <button onClick={() => setfriends(friends.map((f)=> f === "John" ? "John Smith" : f))}>Update Friends</button>
+    </div>
+  )
+}
+
+export default App
+*/
+//********************************************************************* */
+
+//********************************************************************* */
+/*
+const App = () => {
+
+  const [movie, setmovie] = useState([
+    {id:1, title: "The Shawshank Redemption", year: 1994,rating:10},
+    {id:2, title: "The Godfather", year: 1972,rating:9},
+  ])
+  const handleClick = () => {
+    setmovie(movie.map((m) => (m.id === 1 ? {...movie, title:"No way home", rating:8, year:2020}:m)))
+      }
+
+   return(
+    <div>
+      <h1>Movie List:</h1>
+      {movie.map((m)=>(
+        <div key={m.id}>  
+        <h2>{m.title}</h2>
+        <p>Year: {m.year}</p>
+        <p>Rating: {m.rating}/10</p>
+        </div>
+        ))}
+        <button onClick={handleClick}>Change Rating</button>
+    </div>
+    
+  )
+}
+
+export default App
+*/
+//********************************************************************* */
+/*
+import Component1 from "./components/Component1"
+import Component2 from "./components/Component2"
+const App = () => {
+  const [count, setcount] = useState(0)
+  return (
+    <div>
+      <h1>Count:{count}</h1>
+      <Component1 count={count} onClickHandler={() => setcount(count + 1)}/>
+      <Component2 count={count} onClickHandler={() => setcount(count - 1)}/>
+    </div>
+  )
+}
+
+export default App
+*/
+//********************************************************************* */
+//Examples
+/*
+
+import { useState } from "react"
+import Todolist from "./components/Todolist"
+const App = () => {
+  return (
+    <div>
+      <Todolist />
+    </div>
+  )
+}
+
+export default App
+*/
+//********************************************************************* */
+
+import Profile from "./components/Profile"
+const App = () => {
+  return (
+    <div>
+      <Profile />
+    </div>
+  )
+}
+
+export default App
