@@ -207,12 +207,40 @@ const App = () => {
 export default App
 */
 //********************************************************************* */
-
+/*
 import Profile from "./components/Profile"
 const App = () => {
   return (
     <div>
       <Profile />
+    </div>
+  )
+}
+
+export default App
+*/
+//********************************************************************* */
+/*
+import React from 'react'
+import ShoppingList from './components/ShoppingList'
+const App = () => {
+  return (
+    <div>
+      <ShoppingList />
+    </div>
+  )
+}
+
+export default App
+*/
+//************************************ */
+import React from 'react'
+import Switcher from './components/Switcher'
+const App = () => {
+  return (
+    <div>
+      
+      <Switcher />
     </div>
   )
 }
